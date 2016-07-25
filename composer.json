@@ -1,0 +1,17 @@
+{
+  "name": "silinternational/yii2-email-log-target",
+  "version": "1.0.1",
+  "type": "library",
+  "description": "Yii2 log target for sending data to email without trace information",
+  "keywords": ["yii2", "email", "log", "json"],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Sil\\Log\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "2.*"
+  }
+}
