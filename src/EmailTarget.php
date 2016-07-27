@@ -21,8 +21,13 @@ class EmailTarget extends yEmailTarget
             // exceptions may not be serializable if in the call stack somewhere is a Closure
             if ($text instanceof \Throwable || $text instanceof \Exception) {
                 $text = sprintf('[%s] %s', $text->getCode(), $text->getMessage());
-            } else {
+            } elseif (is_array($text)) {
+                /*
+                 * Only VarDump if array, don't want to inadvertently log objects with sensitive info
+                 */
                 $text = VarDumper::export($text);
+            } else {
+                $text = sprintf('Unsupported object of type %s sent to logger', get_class($text));
             }
         }
 
