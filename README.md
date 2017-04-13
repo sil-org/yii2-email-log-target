@@ -2,6 +2,7 @@
 Custom version of yii\log\EmailTarget to exclude trace information from messages.
 
 ## What & Why
+
 The built in ```yii\log\EmailTarget``` class does a nice job of serializing and sending log and 
 exception messages via email. Unfortunately when the message is an exception itself the exception 
 is serialized to string using default``` \Exception::__toString()``` method which includes stack 
