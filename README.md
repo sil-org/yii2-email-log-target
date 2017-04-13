@@ -1,5 +1,5 @@
 # yii2-email-log-target
-Custom version of yii\log\EmailTarget to exclude trace information from messages
+Custom version of yii\log\EmailTarget to exclude trace information from messages.
 
 ## What & Why
 The built in ```yii\log\EmailTarget``` class does a nice job of serializing and sending log and 
