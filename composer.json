@@ -1,6 +1,5 @@
 {
   "name": "sil-org/yii2-email-log-target",
-  "version": "1.1.1",
   "type": "library",
   "description": "Yii2 log target for sending data to email without trace information",
   "keywords": ["yii2", "email", "log", "json"],
